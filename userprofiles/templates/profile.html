@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block head_title %}TaskBuster Django Tutorial{% endblock %}
+
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{% trans 'Perfil de Usuario' %}</h1>
+        <p>{% if is_auth %}{{ name }}{% else %}No hay nadie autenticado{% endif %}
+        <p>{% blocktrans %}TaskBuster es un simple gestor de tareas que te ayudará a administrar tu día a día. </br> Puedes crear listas de cosas pendientes, tareas periódicas y ¡mucho mas! </br></br> Si quieres aprender como se ha creado, o crearlo ¡tu mismo!, visita la página www.django-tutorial.com{% endblocktrans %}</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2 id="locale-date">{{today}}</h2>
+          <p>{% trans "Esta es la hora usando tu información local." %}</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2 id="non-locale-date">{{today|unlocalize}}</h2>
+          <p>{% trans "Este es el formato por defecto." %}</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>{% trans "Zonas Horarias" %}</h2>
+          <p>Madrid: <span id="time-tz">{{now|time:"H:i"}}</span></p>
+          <p>UTC: <span id="time-utc">{{now|utc|time:"H:i"}}</span></p>
+          <p>New York: <span id="time-ny">
+            {{now|timezone:"America/New_York"|time:"H:i"}}</span></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+{% endblock %}

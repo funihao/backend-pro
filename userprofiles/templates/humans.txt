@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    JJ Palacios -- Developer -- @funihao
+
+# THANKS
+
+    Thanks to Marina Mele, who encouraged me through his tutorials
+    to learn django, keep on learning and stepping up to new challenges
+
+# TECHNOLOGY COLOPHON
+
+    Django
+    HTML5 Boilerplate
+    Twitter Boostrap
+    jQuery, Modernizr
+
