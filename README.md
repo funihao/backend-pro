@@ -23,18 +23,20 @@ Paquetes y versiones
 
 - **python3** and **pip3**
 - **virtualenv and virtualenvwrapper**
-  Estos requisistos son previos y obvios para poder trabajar con Django y crear entornos virtuales
-- **Django==1.7.1**             #
-- **Pillow==2.6.1**             # Librería de tratm. imagenes
-- **Werkzeug==0.9.6**           # Debug en el navegador
-- **argparse==1.2.1**           #
-- **django-grappelli==2.6.3**   # Tema admin de django
-- **django-extensions==1.4.9**  # Comandos extendidos, necesario para Werkzeug
-- **ipdb==0.8**                 # Herramienta de debug (import ipdb... en el código)
-- **ipython==2.3.1**            #
-- **six==1.8.0**                #
-- **tablib==0.10.0**            # Librería para exportar a excel, csv,..
-- **wsgiref==0.1.2**            #
+
+		Estos requisistos son previos y obvios para poder trabajar con Django y crear entornos virtuales
+		
+- **Django==1.7.1**							#
+- **Pillow==2.6.1**							# Librería de tratm. imagenes
+- **Werkzeug==0.9.6**						# Debug en el navegador
+- **argparse==1.2.1**						#
+- **django-grappelli==2.6.3**		# Tema admin de django
+- **django-extensions==1.4.9**	# Comandos extendidos, necesario para Werkzeug
+- **ipdb==0.8**									# Herramienta de debug (import ipdb... en el código)
+- **ipython==2.3.1**						#
+- **six==1.8.0**								#
+- **tablib==0.10.0**						# Librería para exportar a excel, csv,..
+- **wsgiref==0.1.2**						#
 
 
 Guía de comienzo rápido
@@ -57,7 +59,7 @@ Descarga el proyecto de "backend-pro"
 
 Descarga el proyecto desde GitHub, como un archivo zip o  usando la terminal:
 
-    $ git clone git://github.com/funihao/backend-pro.git
+		$ git clone git://github.com/funihao/backend-pro.git
 
 Esto descargará el repositorio en el directorio actual.
 
