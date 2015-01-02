@@ -1,8 +1,9 @@
-from django.views.generic import TemplateView
-from django.shortcuts import render
-from django.contrib.auth import login
+from django.views.generic import TemplateView, RedirectView
+from django.http import HttpResponse
+#from django.shortcuts import render
+#from django.contrib.auth import login
 
-from .forms import UserCreationEmailForm, EmailAuthenticationForm
+#from .forms import UserCreationEmailForm, EmailAuthenticationForm
 
 
 class LoginView (TemplateView):
@@ -12,6 +13,7 @@ class LoginView (TemplateView):
         context = super(LoginView, self).get_context_data(**kwargs)
         is_auth = False
         name = None
+
         if self.request.user.is_authenticated():
             is_auth = True
             name = self.request.user.username
@@ -24,16 +26,8 @@ class LoginView (TemplateView):
         context.update(data)
         return context
 
-    def signin(request):
-        form = EmailAuthenticationForm(request.POST or None)
 
-        if form.is_valid():
-            login(request, form.get_user())
-
-        return render(request, template_name, {'form': form})
-
-
-class ProfileView (TemplateView):
+class ProfileView(TemplateView):
     template_name = 'profile.html'
 
     def get_context_data(self, **kwargs):
@@ -46,3 +40,8 @@ class ProfileView (TemplateView):
 
     def get_userprofile(self):
         return self.request.user.userprofile
+
+
+class PerfilRedirectView(RedirectView):
+    pattern_name = 'profile'
+

@@ -1,4 +1,5 @@
 .gitignore~
+db.sqlite3
 *.pyc
 media/*
 tracks/static/*
