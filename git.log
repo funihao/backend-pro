@@ -1,0 +1,23 @@
+commit 12d6429b2f6842d81f2380f5cee998a023adec57
+Author: jjpalacios <funihao@gmail.com>
+Date:   Fri Jan 2 13:09:10 2015 +0100
+
+    Django avanzado 1 (Harvey): Modificado sfotipy/urls y userprofiles/urls para adaptar a la nueva estructura de urls distribuidas. Reconstruir db.sqlite3
+
+commit fa89e670c4e793a79064d54cfbbdf38e65fbf4d1
+Author: jjpalacios <funihao@gmail.com>
+Date:   Thu Jan 1 13:34:56 2015 +0100
+
+    Django Revolutions Parte II (Julian Amaya). Pruebas de test
+
+commit b354d8787c5cec5dcb8c58e2a06d971b93ee3b55
+Author: jjpalacios <funihao@gmail.com>
+Date:   Wed Dec 31 12:53:11 2014 +0100
+
+    Añadido archivo README.md y 'last_name' en artist.html
+
+commit 1681a4fa5775436d5af209fff7792b5623b7997f
+Author: jjpalacios <funihao@gmail.com>
+Date:   Wed Dec 31 11:51:00 2014 +0100
+
+    Inicial cubre hasta la clase Revolutions Parte 2 de Julian Amaya, hasta class base views

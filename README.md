@@ -7,6 +7,8 @@ La idea, a partir de aquí, es crear commits de acuerdo al avance de las clases,
 
 **AVISO**, esto es una prueba, no obstante espero que a medida que avanzo en el curso pueda ir dejando las suficientes migas (commits) para poder cumplir con la idea inicial.
 
+**La base de datos debe ser reconstruida.**
+
 **Sería magnifico que este repositorio comenzase con la primera clase de Harvey ...**
 
 
@@ -21,7 +23,7 @@ Se trabaja en un entorno virtual en el que se instalan y configuran los distinto
 Paquetes y versiones
 --------------------
 
-- **python3** and **pip3**
+- **python** and **pip**
 - **virtualenv and virtualenvwrapper**
 
 		Estos requisistos son previos y obvios para poder trabajar con Django y crear entornos virtuales
