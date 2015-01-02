@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head_title %}Lista de Albumnes{% endblock %}
+
+{% block content %}
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <h1>Álbumes</h1>
+    <div>Page: {{ page }}</div>
+      {% for album in object_list %}
+      <div class="col-md-4">
+        <a href="{{ album.artist.first_name }}">
+        <figure>
+          <img src="/media/{{ album.cover }}" alt="{{ album.title }}" width="250" height="250"/>
+          <figcaption>{{ album.title }}</figcaption>
+          <figcaption>By {{ album.artist.first_name }} {{ album.artist.last_name }}</figcaption>
+        </figure>
+        </a>
+      </div>
+      {% empty %}
+          <div>No hay álbumes todavía.</div>
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}

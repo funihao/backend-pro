@@ -1,3 +1,9 @@
+commit 2bd8bb38e708d5730defd6a3489fc7b828099f89
+Author: jjpalacios <funihao@gmail.com>
+Date:   Fri Jan 2 13:23:31 2015 +0100
+
+    Eliminada la base de datos para que sea generada una vez descargado el repositorio. Generar los datos localmente para evitar problemas con los registros. Esto generará a su vez los directorios /media/... necesarios
+
 commit 12d6429b2f6842d81f2380f5cee998a023adec57
 Author: jjpalacios <funihao@gmail.com>
 Date:   Fri Jan 2 13:09:10 2015 +0100
