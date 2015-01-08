@@ -1,3 +1,9 @@
+commit 99aa24ee6d44d277708877333f128defd1ff375c
+Author: jjpalacios <funihao@gmail.com>
+Date:   Fri Jan 2 19:56:17 2015 +0100
+
+    Django avanzado 2 (Harvey): ListView y plantilla de filtro por artista
+
 commit 2bd8bb38e708d5730defd6a3489fc7b828099f89
 Author: jjpalacios <funihao@gmail.com>
 Date:   Fri Jan 2 13:23:31 2015 +0100

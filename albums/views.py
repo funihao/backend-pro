@@ -1,5 +1,5 @@
 from albums.models import Album
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 #from django.shortcuts import render
 
 
@@ -15,3 +15,9 @@ class AlbumListView(ListView):
             queryset = super(AlbumListView, self).get_queryset()
 
         return queryset
+
+
+class AlbumDetailView(DetailView):
+    model = Album
+    template_name = 'album_detail.html'
+
