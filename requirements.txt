@@ -1,11 +1,11 @@
-Django==1.7.1             #
-Pillow==2.6.1             # Librería de tratm. imagenes
-Werkzeug==0.9.6           # Debug en el navegador
-argparse==1.2.1           #
-django-grappelli==2.6.3   # Tema admin de django
-django-extensions==1.4.9  # Comandos extendidos, necesario para Werkzeug
-ipdb==0.8                 # Herramienta de debug (import ipdb... en el código)
-ipython==2.3.1            #
-six==1.8.0                #
-tablib==0.10.0            # Librería para exportar a excel, csv,..
-wsgiref==0.1.2            #
+Django==5.1               #
+Pillow==10.4.0            # Librería de tratm. imagenes
+Werkzeug==3.0.3           # Debug en el navegador
+argparse==1.4.0           #
+django-grappelli==4.0.1   # Tema admin de django
+django-extensions==3.2.3  # Comandos extendidos, necesario para Werkzeug
+ipdb==0.13.13             # Herramienta de debug (import ipdb... en el código)
+ipython==8.26.0           #
+six==1.16.0               #
+tablib==3.6.1             # Librería para exportar a excel, csv,..
+uvicorn==0.30.6           #
